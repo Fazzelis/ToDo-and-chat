@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Session
 from schemas.task import CreateDto
-from models import Task
+from models.Task import Task
 from schemas.response.task import AllTasksResponse, TaskPostResponse
 from schemas.task import PostDtoResponse
 from uuid import UUID

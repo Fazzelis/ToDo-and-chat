@@ -9,3 +9,6 @@ public.pub
 .idea
 docker-compose.yml
 docker
+__pycache__/
+/cert.key
+/cert.pem
