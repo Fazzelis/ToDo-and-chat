@@ -17,13 +17,13 @@ router = APIRouter(
 @router.post("/create", response_model=TaskPostResponse)
 def post_task(
         name: str = Form(..., min_length=1),
-        encoded_jwt: HTTPAuthorizationCredentials = Depends(settings.http_bearer),
+        credentials: HTTPAuthorizationCredentials = Depends(settings.http_bearer),
         db: Session = Depends(get_db)
 ):
     payload = CreateDto(
         name=name
     )
-    return TaskService(db=db).create_task(payload=payload, encoded_jwt=encoded_jwt.credentials)
+    return TaskService(db=db).create_task(payload=payload, encoded_jwt=credentials.credentials)
 
 
 @router.get('/get-all', response_model=AllTasksResponse)

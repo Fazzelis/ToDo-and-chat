@@ -4,5 +4,5 @@ from uuid import UUID
 
 class AuthorizationResponse(BaseModel):
     user_id: UUID
-    access_token: str
+    token: str
     token_type: str

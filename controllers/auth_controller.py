@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, Cookie
+from fastapi import APIRouter, Depends, Request
 from schemas.user import AuthorizationDto
 from database.get_db import get_db
 from sqlalchemy.orm import Session

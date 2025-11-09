@@ -1,14 +1,8 @@
 websocket.txt
-req.txt
 alembic.txt
 .env
-.dockerignore
 private.pem
 public.pub
 .venv
 .idea
-docker-compose.yml
-docker
 __pycache__/
-/cert.key
-/cert.pem

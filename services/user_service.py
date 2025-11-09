@@ -36,7 +36,7 @@ class UserService:
 
         return AuthorizationResponse(
             user_id=user.id,
-            access_token=token,
+            token=token,
             token_type="Bearer"
         )
 
@@ -55,6 +55,6 @@ class UserService:
 
         return AuthorizationResponse(
             user_id=user.id,
-            access_token=token,
+            token=token,
             token_type="Bearer"
         )
